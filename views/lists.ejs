@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Submissions List</title>
+  </head>
+  <body>
+    <h1>These are all the submissions in the database</h1>
+    <% submissions.forEach((s) => { %>
+      <ul>
+        <li><%= s.fname %></li>
+        <li><%= s.lname %></li>
+        <li><%= s.birthday %></li>
+        <li><%= s.comments %></li>
+      </ul>
+    <% }); %>
+  </body>
+</html>

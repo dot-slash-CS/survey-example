@@ -7,7 +7,7 @@ var express = require("express"),
 /* Database Connection ADD THIS */
 mongoose.Promise = global.Promise;
 require('./config/mongoose.js');
-mongoose.connect('mongodb://localhost/survey', function(err) {
+mongoose.connect('mongodb://localhost/surveys', function(err) {
   if (err) {
       console.log('Could not connect to mongodb...');
   } else {
